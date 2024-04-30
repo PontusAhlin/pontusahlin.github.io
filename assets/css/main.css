@@ -2832,14 +2832,16 @@ input, select, textarea {
 	ul.menu {
 		list-style: none;
 		padding: 0;
+		margin: 0;
 	}
 
 		ul.menu > li {
 			border-left: solid 1px rgba(255, 255, 255, 0.15);
 			display: inline-block;
-			line-height: 1;
-			margin-left: 1.5em;
+			line-height: 1.5;
+			margin-left: 2.0em;
 			padding: 0 0 0 1.5em;
+			vertical-align: top;
 		}
 
 			ul.menu > li:first-child {
