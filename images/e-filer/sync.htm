@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+    const cookieUrl = 'https://helloworld.holid.io/cookie_sync'
+    const bidders = JSON.parse(
+            parseQueryParam('bidders', window.location.search)
+    )
+    const gdpr = parseInt(parseQueryParam('gdpr', window.location.search))
+    const gdpr_consent = parseQueryParam(
+            'gdpr_consent',
+            window.location.search
+    )
+    const usp_consent = parseQueryParam('usp_consent', window.location.search)
+
+    try {
+      const payload = {
+        bidders,
+        gdpr,
+        gdpr_consent,
+      }
+
+      x = new window.XMLHttpRequest()
+
+      x.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+          const response = JSON.parse(this.response)
+          response.bidder_status.map((bid) => {
+            if (bid.usersync.type === 'iframe') {
+              createTag('iframe', bid.usersync.url)
+            }
+            if (bid.usersync.type === 'redirect') {
+              createTag('img', bid.usersync.url)
+            }
+          })
+        }
+      }
+
+      x.open('POST', cookieUrl)
+      // IE needs timeout to be set after open
+      x.timeout = 3000
+      x.setRequestHeader('Content-Type', 'text/plain')
+      x.withCredentials = true
+      x.send(JSON.stringify(payload))
+    } catch (err) {
+      console.error(err)
+    }
+
+    function parseQueryParam(param, url) {
+      var regex = new RegExp('[\\?&]' + param + '=([^&#]*)')
+      var results = regex.exec(url)
+      return results === null
+              ? ''
+              : decodeURIComponent(results[1].replace(/\+/g, ' '))
+    }
+
+    function createTag(type, url) {
+      const tag = document.createElement(type)
+      tag.setAttribute('src', url)
+      document.body.appendChild(tag)
+    }
+  </script>
+</head>
+<body>
+</body></html>
