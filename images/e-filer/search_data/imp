@@ -1,0 +1,39 @@
+document.write('<div id="asx_t_2332534" style="width:980px; height:240px; position:relative;">');
+document.write('<iframe id=\'asx_1714995200569_iframe\' name=\'asx_1714995200569_iframe\' src=\'about:blank\' border=\'0\' frameborder=\'0\' marginwidth=\'0\' marginheight=\'0\' scrolling=\'no\' width=\'980\' height=\'240\'></iframe>\n\n<scr'+'ipt>\nvar asx_proto = \'https\';\nvar asx_clickurl = encodeURIComponent(\'https://adsby.bidtheatre.com/click?a=1802486&s=4773&z=12091&impId=x5_asx-b-r3_437925405490275573&xs=880933652&ms=eyJjZCI6ZmFsc2UsInN0IjoxLCJtbGF0Ijo1OS4zNSwibW9yZyI6Imt1bmdsaWdhIHRla25pc2thIGhvZ3Nrb2xhbiIsIm1sc2NvcmUiOjAuMCwibXppcCI6IjExNCAyOCIsImJpcCI6IjIwMDE6NmIwOjE6MTA0MTowOjA6MDowIiwiYWdpZCI6MzE4MzIyMywibWxtb2RlbCI6ImJ0b3B0IiwibWxvbiI6MTguMDcsIm1yZWdpb24iOiJhYiIsImR0IjoxLCJtY2l0eSI6InN0b2NraG9sbSIsInBhZ2V1cmwiOiJodHRwczpcL1wvd3d3LnRyYWRlcmEuY29tXC9zZWFyY2g%2FcT1ob3JpJTIwY29tbWFuZGVyIiwiaW1waWQiOiJ4NV9hc3gtYi1yM180Mzc5MjU0MDU0OTAyNzU1NzMiLCJtY291bnRyeSI6InN3ZSIsInRzIjowfQ%3D%3D&tag=2332534&dealId=&kuid=s_5_8cd4b71f3f240c252355ecd30012577663e7ff04&epi=3293145&url=\');\nvar asx_uri = \'https://creatives.bidtheatre.com/html5/138077/FBA9E/index.html?protocol=\' + asx_proto + \'&clickurl=\' + asx_clickurl + \'\';  \ndocument.getElementById(\'asx_1714995200569_iframe\').src = asx_uri+\'&ADONNEWS_DSP=bt&DOMAIN=880933652&CITY=stockholm&REGION=ab&ADONNEWS_DEAL_ID=&COUNTRY=swe&SITE_URL=https%3A%2F%2Fwww.tradera.com&AD_DIMENSION=980x240&CAMPAIGN_ID=138077&TIMESTAMP_ID=1715676265253&RND=8447457357466843484\';\n</scr'+'ipt>');
+document.write('</div>');
+(function () {
+	function loadScript(callback) {
+		var protocol = ('https:' === document.location.protocol ? 'https' : 'http'),
+			base = document.getElementsByTagName('script')[0],
+			script = document.createElement('script');
+		script.src = protocol + '://adsby.bidtheatre.com/js/asx_tracking.min.js';
+		script.type = 'text/javascript';
+		script.onload = callback;
+		base.parentNode.insertBefore(script, base.nextSibling);
+	}
+	if (typeof asxtracking === 'undefined') {
+		loadScript(function () {asxtracking.pushAd('asx_t_2332534', 4773, 12091, 1802486, 3, 980, 240, 880933652, 3293145, '2332534', 'adsby.bidtheatre.com', 0, 'x5_asx-b-r3_437925405490275573', 0, ''); });
+	} else {
+		asxtracking.pushAd('asx_t_2332534', 4773, 12091, 1802486, 3, 980, 240, 880933652, 3293145, '2332534', 'adsby.bidtheatre.com', 0, 'x5_asx-b-r3_437925405490275573', 0, '');
+	}
+})();
+var img1 = new Image(0,0);
+
+img1.src = 'https://ps.eyeota.net/match?bid=6cb2cjv&uid=s_5_8cd4b71f3f240c252355ecd30012577663e7ff04&gdpr=1&gdpr_consent=CP-WLQAP-WLQAAKA1ASVAzEsAP_gAEPgACQgKKwLgACAAIgAWABkADwAQAAqABkADwAIAAVAAyABpAEQARQAjgBJACYAE4ALYAX4AwgDEAGYAPAAgQBSADiAHmAP0AhABEQCcAF1AMAAYqA6gDqgHtAQ6AiIBGoCjQFpgLzAYyAywCMwEnIKIAomBRUFFYEAACAAFgAPAAqAB4AEAAMgAaABEACOAEwAMQAZgA_AD9AIQAREAiwBdQDFAGfAOoAe0BDoCVQF5gL6AYIAywBx4FEoKKAoqAAA.YAAAAAAAAAAA';
+
+img1.style.position = 'absolute';
+
+img1.style.zIndex = '-1';
+
+var base1 = document.getElementsByTagName('script')[0];
+
+base1.parentNode.insertBefore(img1, base1.nextSibling);
+
+var base2 = document.getElementsByTagName('script')[0];
+
+var script2 = document.createElement('script');
+
+script2.setAttribute('src', 'https://pixel.yabidos.com/fltiu.js?qid=73832313f543932313f5639393&cid=996&p=344265&s=https%3A%2F%2Fwww.tradera.com&adtg=asx_t_2332534&x=880933652&ai=880933652&di=s_5_8cd4b71f3f240c252355ecd30012577663e7ff04&nci=138077&nai=20223');
+
+base2.parentNode.insertBefore(script2, base2.nextSibling);
+
